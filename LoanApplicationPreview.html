@@ -1,12 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Application preview</title>
+    <link rel="stylesheet" href="LoanApplicationpreview.css">
 </head>
+
 <body>
     
+    <section id="appl">
+        <div class="LoanApp">
+            <div class="text">
+                <h2 style="color: green;">Hello {{First_name}}</h2>
+                <p>The loan i set up and ready to be electronically signed.</p>
+                <p>Examination your data abd click the following link to submit a digit loan application.</p>
+            </div>
+
+
+            <div class="frm">
+                <center>
+                    <form action="" class="frm1">
+                        <button class="btn">
+                      Name:
+                        </button><br>
+                        {{first_name}}{{Last_name}}
+                        <br>
+                        <button class="btn">
+                            Email:
+                        </button><br>
+                        {{first_name}}{{Last_name}}
+                        <br>
+                        <button class="btn">
+                            Amount:
+                        </button><br>
+                        {{first_name}}{{Last_name}}
+                        <br><br>
+                        <a href="">View Amount</a>
+                    </form>
+                </center>
+            </div>
+        </div>
+        <center><button class="btn1">DISCOVER MORE</button></center>
+    </section>
 </body>
+
 </html>
