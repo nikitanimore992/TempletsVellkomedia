@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.email-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-header {
+    background-color: #246693;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.email-header h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.email-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.email-body p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.user-details table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.user-details th, .user-details td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.user-details th {
+    background-color: #f9f9f9;
+}
+
+.user-details a {
+    color: #246693;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    background-color: #246693;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-footer {
+    background-color: #246693;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.email-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+     </style>
+
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h2>%user_field_1% Update For Your Request!</h2>
+        </div>
+        <div class="email-body">
+            <p>
+                Our team is eager to assist you in completing the last steps of your loan application. Make sure you don't miss this opportunity.
+            </p>
+            <div class="user-details">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>%user_field_1%</td>
+                        <td>%email%</td>
+                        <td><a href="#">View Here</a></td>
+                    </tr>
+                </table>
+            </div>
+            <a href="#" class="button">View Your Application</a>
+        </div>
+        <div class="email-footer">
+            <p>This notification email has been sent to you at %email%.</p>
+            <p>If you no longer wish to receive email from us, kindly opt-out <a href="#">here</a></p>
+            <p>6709 W. 119th Street #338, Overland Park, Kansas 66209</p>
+        </div>
+    </div>
+</body>
+</html>
