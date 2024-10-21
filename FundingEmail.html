@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Email</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.email-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-header {
+    background-color: #e9f5f3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.email-header h2 {
+    color: #2a797a;
+    font-size: 20px;
+}
+
+.email-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.email-body p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.user-details {
+    margin: 20px 0;
+}
+
+.user-details table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.user-details td {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    display: inline-block;
+    background-color: #2a797a;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.email-footer {
+    background-color: #e9f5f3;
+    color: #666;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.email-footer a {
+    color: #2a797a;
+    text-decoration: underline;
+}
+
+     </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h2>Your Funding Is Within Reach!</h2>
+        </div>
+        <div class="email-body">
+            <p>
+                <strong>%user_field_1%</strong>, Don't Keep Our Lenders Waiting!
+            </p>
+            <p>
+                We have received positive reviews regarding your funding request from our partners. Shall we continue to the next step?
+            </p>
+            <div class="user-details">
+                <table>
+                    <tr>
+                        <td><strong>Name :</strong></td>
+                        <td>%user_field_1% %user_field_2%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email :</strong></td>
+                        <td>%email%</td>
+                    </tr>
+                </table>
+            </div>
+            <a href="#" class="button">Proceed Further</a>
+        </div>
+        <div class="email-footer">
+            <p>This notification email has been sent to you at %email%.</p>
+            <p>If you no longer wish to receive email from us, kindly opt-out <a href="#">here</a></p>
+            <p>or write to: 1309 E 3rd Ave Suite 202 Durango, CO 81301</p>
+        </div>
+    </div>
+</body>
+</html>
